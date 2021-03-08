@@ -101,7 +101,7 @@ while True:
     # if the person is recognised the program that will write name will be called in the same terminal
 	if len(names)!=0 and names[-1] != "Unknown":
 		#command for running the program for writing name on board
-		cmd="python3 /home/dospina/kortex/api_python/examples/102-Movement_high_level/Face_Recognition_Name_Final.py -n "+names[-1]+" -vect1 "+str(args.vect1[0])+" "+str(args.vect1[1])+" "+str(args.vect1[2])+" -vect2 "+str(args.vect2[0])+" "+str(args.vect2[1])+" "+str(args.vect2[2]) +" -vect3 "+str(args.vect3[0])+" "+str(args.vect3[1])+" "+str(args.vect3[2])+" -orientation "+str(args.orientation[0])+" "+ str(args.orientation[1])+" "+str(args.orientation[2]) +" -start_position "+str(args.start_position[0])+" "+str(args.start_position[1])+" "+str(args.start_position[2])+ " -normal_vector "+str(args.normal_vector[0])+" "+str(args.normal_vector[1])+" "+str(args.normal_vector[2])+" -distance "+str(args.distance)
+		cmd="python3 /home/dospina/kortex/api_python/examples/102-Movement_high_level/write_on_board.py -n "+names[-1]+" -vect1 "+str(args.vect1[0])+" "+str(args.vect1[1])+" "+str(args.vect1[2])+" -vect2 "+str(args.vect2[0])+" "+str(args.vect2[1])+" "+str(args.vect2[2]) +" -vect3 "+str(args.vect3[0])+" "+str(args.vect3[1])+" "+str(args.vect3[2])+" -orientation "+str(args.orientation[0])+" "+ str(args.orientation[1])+" "+str(args.orientation[2]) +" -start_position "+str(args.start_position[0])+" "+str(args.start_position[1])+" "+str(args.start_position[2])+ " -normal_vector "+str(args.normal_vector[0])+" "+str(args.normal_vector[1])+" "+str(args.normal_vector[2])+" -distance "+str(args.distance)
 		print(cmd)
 		#destory the video stream window
 		cv2.destroyAllWindows()
